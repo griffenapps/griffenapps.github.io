@@ -1,6 +1,10 @@
 // Global styling for this template
+@font-face {
+  font-family: 'ClioUltraBlack';
+  src: url('../fonts/LeType - ClioUltraBlack-UltraBlack.otf');
+}
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -11,6 +15,7 @@ p {
 p.small {
   font-size: 16px;
 }
+
 a,
 a.active,
 a:active,
@@ -40,6 +45,7 @@ hr.star-primary {
   border: none;
   border-top: solid 5px;
 }
+
 hr.star-light:after,
 hr.star-primary:after {
   font-family: FontAwesome;
@@ -52,18 +58,20 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-  border-color: white;
+  border-color: $theme-color2;
 }
+
 hr.star-light:after {
-  color: white;
+  color: $theme-color5;
   background-color: $theme-success;
 }
 
 hr.star-primary {
-  border-color: $theme-primary;
+  border-color: $theme-color2;
 }
+
 hr.star-primary:after {
-  color: $theme-primary;
+  color: $theme-color5;
   background-color: white;
 }
 
@@ -83,7 +91,8 @@ section.success {
   color: white;
   background: $theme-success;
 }
-@media(max-width:767px) {
+
+@media(max-width: 767px) {
   section {
     padding: 75px 0;
   }

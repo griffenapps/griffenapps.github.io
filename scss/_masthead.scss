@@ -5,7 +5,7 @@ header.masthead {
 
   text-align: center;
 
-  color: white;
+  color: $theme-color1;
   background: $theme-success;
   img {
     display: block;
@@ -40,5 +40,11 @@ header.masthead {
         font-size: 1.75em;
       }
     }
+  }
+}
+
+@media(max-width: 480px) {
+  header.masthead {
+    padding-top: 140px;
   }
 }
